@@ -16,6 +16,11 @@ You can just download the FASTA what you want and change the file name as "seque
 
 You can also import findpam into other python file.
 
+### Example
+
+I use findpam.py to read a FASTA file which is >NC_012692.1:118600-120237 Escherichia coli plasmid pAR060302 and the out put is the file "Guide Sequences".
+The output is too long that it is not convient to show it in Readme.md, please go to Guide Sequences.txt if you want check the output.
+
 ## What I used
 
 There is no need to import any biopython in this python file. I used a "class" to read the FASTA file, it can read the title and sequence in a "list" way. I then converted "list" to "string" for the following steps. Since I considered that some FASTA files may contain multiple-end sequences, I linked all the sequences in the "read_fasta_base" function.
