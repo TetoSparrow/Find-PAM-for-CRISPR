@@ -65,15 +65,17 @@ def negative_PAM(seq):
 
 def main():
     # You can change the filename to read and input any AFSTA file. "rh" and "rb" are header and baselist respectively.
-    filename = "sequence.fasta"
+    filename = "sequence.fasta"  # Change the file name when you use this python file.
     rh = ReadFASTA(filename).read_fasta_head()
     rb = ReadFASTA(filename).read_fasta_base()
     sequence = "".join(rb)  # Change the list as a string to search for PAM later.
     rc_sequence = reverse_complement(sequence)
     ForwardPAM = positive_PAM(sequence)
     ReversePAM = negative_PAM(rc_sequence)
+
     print("Gene sequence is:")
-    print(rh)
+    for i in range(len(rh)):  # I use a "for" loop here because rh(read header) is a "list".
+        print(rh[i])
     print(sequence)
     print()
     print("Reverse complement sequence is:")
@@ -84,6 +86,7 @@ def main():
     print()
     print("Reverse Strand PAM:")
     print(ReversePAM)
+
     f = open('Guide Sequences.txt', 'w')  # Create and open a text file called "Guide Sequences".
     for a in range(len(rh)):  # I use a "for" loop here because rh(read header) is a "list".
         f.write(rh[a])  # Write headers into the text file.
