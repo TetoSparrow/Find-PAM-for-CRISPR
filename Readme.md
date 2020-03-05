@@ -30,6 +30,7 @@ Then I used some define to locate the "GG" in the sequence, and then printed the
 ## Version control
 
 https://github.com/TetoSparrow/Find-PAM-for-CRISPR
+You can see more details in "git" file.
 
 ## Future update
 
