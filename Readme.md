@@ -8,6 +8,7 @@ It can read the FASTA file and find all of PAM, print out 20 nucleotides before 
 
 ## Introduction
 
+![](PAM%20and%20gRNA.png)
 CRISPR-Cas9 is a genome editing technology. In this system, the endonuclease Cas9 generates double strand breaks in DNA upon RNA-guided recognition of a complementary DNA sequence, which strictly requires the presence of a protospacer adjacent motif (PAM) next to the target site. Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR) is a specific sequence in bacterial. The CRISPR-Cas system is a prokaryotic immune system that confers resistance to foreign genetic elements such as those present within plasmids and phages that provides a form of acquired immunity. In the DNA sequence of the phage, there is a small segment of the PAM gene, which is generally 2-6 bases in length. Cas1 and Cas2 will recognize the PAM gene and cut them, inserting this gene into the CRISPR gene of bacteria. It is like a new memory for bacterial gene. This PAM sequence is an important signal used by the Cas protein to identify "friends" and "enemies". When we use CRISPR for gene editing, we need to find PAM first, and design complementary sequences based on the first 20 bases of the PAM sequence to construct gudie RNA.
 
 ## How to use it
